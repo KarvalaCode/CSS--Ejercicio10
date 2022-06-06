@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+}
+.contenedor {
+    display: flex;
+    gap: 0.5rem;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.item  {
+    background-color: coral;
+}
+
+.principal {
+    flex-grow: 3;
+    height: 100%;
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+@media (max-width:640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    .contenedor {
+        flex-direction: row;
+        justify-self: end;
+
+    }
+} ;
+    
